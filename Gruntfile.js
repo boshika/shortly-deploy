@@ -128,7 +128,9 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('deploy', ['concat', 'uglify', 'jshint'
-  ]);
+  ],
+    grunt.registerTask('heroku:development', 'clean less mincss');
+  );
 
 };
 
